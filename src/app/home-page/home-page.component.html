@@ -1,0 +1,173 @@
+
+
+    <button type="button" mdbBtn color="primary" class="relative waves-light" (click)="basicModal.show()" mdbWavesEffect>רישום</button>
+    <button type="button" mdbBtn color="primary" class="relative waves-light" (click)="basicModal2.show()" mdbWavesEffect>כניסה</button>
+
+  
+    <div mdbModal #basicModal="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title w-100" id="myModalLabel">רישום</h4>
+        </div>
+        <div class="modal-body">
+             <input type="text" id="nameU" placeholder="הכנס שם"/>  :שם<br/><br/>
+             <input type="text" id="userName" placeholder="בחר שם משתמש"/>  :שם משתמש<br/><br/>
+             <input type="text" id="password" placeholder="בחר סיסמא"/>  :סיסמא<br/><br/>
+             <input type="email" id="email" placeholder="הכנס מייל"/>  :כתובת מייל<br/><br/>
+             <input type="number" id="age"/>  :גיל<br/>
+        </div>
+        <div class="modal-footer">
+         
+            <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>צא ללא שמירה</button>
+          <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>שמירה</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div mdbModal #restore="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close pull-right" aria-label="Close" (click)="restore.hide()">
+              <span aria-hidden="true">×</span>
+            </button>
+            <h4 class="modal-title w-100" id="myModalLabel">רישום</h4>
+          </div>
+          <div class="modal-body">
+               נשלחה סיסמא חדשה
+          </div>
+          <div class="modal-footer">
+            <button type="button" mdbBtn color="primary" class="relative waves-light" (click)="restore.hide()" mdbWavesEffect>יציאה</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  <div mdbModal #basicModal2="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal2.hide()">
+            <span aria-hidden="true">×</span>
+          </button>
+          <h4 class="modal-title w-100" id="myModalLabel">כניסה</h4>
+        </div>
+        <div class="modal-body"> 
+             <input type="text" id="userName"/>  :שם משתמש<br/><br/>
+             <input type="text" id="password"/>  :סיסמא<br/><br/>    
+        </div>
+        <div class="modal-footer">
+         
+            <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal2.hide()" (click)="restore.show()" mdbWavesEffect>שכחתי סיסמא</button>
+            <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>בצע</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+<span class="ser">
+   <!-- <input type="text" id="search" placeholder="חיפוש חופשי" />
+   <input type="submit" (click)="search()" /><br/> -->
+   <div class="container h-100">
+    <div class="d-flex justify-content-center h-100">
+      <div class="searchbar">
+        <input class="search_input" type="text" name="" placeholder="Search...">
+        <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+      </div>
+   <button class="btn" type="button" (click)="ToSearch()">חיפוש מתקדם</button>
+</div>
+</div>
+</span>
+
+<br/>
+<br/><br/><br/><br/>
+
+<!-- מתכון היום -->
+<table class="table-bordered" style="width: 600px; margin-right: auto; margin-left: auto;">
+    <tr>
+         <a routerLink="/recepie" routerLinkActive="active" style="color: black">
+         <h1>מתכון היום</h1><br/>
+         <td>
+            <img src="../assets/images/cake.png" alt="Sample Photo" style="height: 450px; width: 450px;"/>
+         </td>
+         <td class="td">
+             שם המתכון ותיאור קצר 
+         </td>
+         </a>
+    </tr>
+  </table>
+  <br/><br/><br/>
+
+
+<span>
+  <a routerLink="/notebook" routerLinkActive="active" style="color: black">
+  <img src="../assets/images/11.png" alt="Sample Photo" style="height: 450px; width: 450px; display: block; margin-right: auto; margin-left: auto;"/>
+</a>
+</span>
+<br/>
+
+
+
+
+
+
+<button id="Advertising" type="button" mdbBtn color="primary" class="relative waves-light" (click)="basicModal3.show()" mdbWavesEffect>פרסם כאן</button>
+
+<div mdbModal #basicModal3="mdbModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myBasicModalLabel" aria-hidden="true" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close pull-right" aria-label="Close" (click)="basicModal.hide()">
+          <span aria-hidden="true">×</span>
+        </button>
+        <h4 class="modal-title w-100" id="myModalLabel">רישום</h4>
+      </div>
+      <div class="modal-body">
+           השאר הודעה למנהל<br/>
+           <input type="text" id="sendM" placeholder=" השאר מספר פלאפון"/>
+           <input type="email" id="sendM" placeholder=" השאר מייל"/>
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" mdbBtn color="secondary" class="waves-light" aria-label="Close" (click)="basicModal.hide()" mdbWavesEffect>צא ללא שמירה</button>
+        <button type="button" mdbBtn color="primary" class="relative waves-light" mdbWavesEffect>שלח</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<h2 style="text-align: center;">נבחרת השפים שלנו</h2>
+<div style="width: 600px; margin-right: auto; margin-left: auto;">
+  
+  <div class="container" >
+      <!-- Next and previous buttons -->
+      <a class="prev" (click)="plusSlides(false)">&#10094;</a>
+      <a class="next" (click)="plusSlides(true)">&#10095;</a>
+    
+    
+      
+    
+      <!-- Thumbnail images -->
+      <div class="row">
+    
+        <div *ngFor="let number of indexesImages" class="column">
+          <img class="demo cursor" [src]="images[number]" style="width:450%; height:450%;" (click)="currentSlide(1)" alt="The Woods">
+        </div>
+      </div>
+    </div>
+</div>
+
+

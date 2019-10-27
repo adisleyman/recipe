@@ -1,0 +1,17 @@
+<p>notebook works!</p>
+<div>
+    <div class="container">
+        <!-- Next and previous buttons -->
+        <a class="prev" (click)="plusSlides(false)">&#10094;</a>
+        
+      
+        <!-- Thumbnail images -->
+        
+      
+          <div *ngFor="let number of indexesImages" class="column">
+            <img class="demo cursor" [src]="images[number]" style="width:100%" (click)="currentSlide(1)" alt="The Woods">
+          </div>
+        
+        <a class="next" (click)="plusSlides(true)">&#10095;</a>
+      </div>
+  </div>
